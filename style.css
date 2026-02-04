@@ -122,6 +122,7 @@ main {
 
 /* MEDIA QUERIES */
 @media (min-width: 30rem) { 
+@media (min-width: 35rem) { 
     header {
         flex-direction: row;
         align-items: center;
