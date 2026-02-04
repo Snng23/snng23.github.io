@@ -7,3 +7,33 @@ body {
     padding: 0 1rem;
 }
 
+
+/* TEXT ELEMENTS */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: navy;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: navy;
+}
+
+p, li {
+    font-family:Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: black;
+}
+
+a {
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
