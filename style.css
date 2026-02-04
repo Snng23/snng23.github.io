@@ -121,7 +121,6 @@ main {
 
 
 /* MEDIA QUERIES */
-@media (min-width: 30rem) { 
 @media (min-width: 35rem) { 
     header {
         flex-direction: row;
@@ -131,5 +130,20 @@ main {
 
     header nav {
         margin-top: 0;
-    }
+    } 
 }
+
+
+@media (min-width: 48rem) { 
+
+    body {
+        padding: 0 3rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr 1fr;
+    }   
+}
+
+
+@me
