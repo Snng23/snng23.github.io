@@ -20,9 +20,16 @@ h2 {
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: black;
+    color: navy;
 
     padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
 }
 
 p, li {
@@ -40,6 +47,17 @@ a {
     font-weight: 600;
     text-decoration: none;
     color: black;
+}
+
+
+/* IMAGE */
+img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+
+    border: 0.05rem solid dimgray;
 }
 
 
