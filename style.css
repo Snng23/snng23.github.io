@@ -21,8 +21,6 @@ h2 {
     font-size: 1rem;
     font-weight: 600;
     color: navy;
-
-    padding-bottom: 0.5rem;
 }
 
 h3 {
@@ -92,5 +90,17 @@ main {
     row-gap: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+
+    margin-top: 0.5rem;
 }
 
