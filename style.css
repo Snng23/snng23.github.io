@@ -62,3 +62,13 @@ header nav {
     margin-top: 0.5rem;
 }
 
+
+/* MAIN CONTENT */
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
