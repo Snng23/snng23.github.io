@@ -95,14 +95,26 @@ main {
 
 
 /* INTRODUCTION */
-#introduction p {
+#introduction .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    column-gap: 3rem;
+}
+
+#introduction .content p {
     max-width: 27.5rem;
+}
+
+#introduction .content img {
+    aspect-ratio: 1;
+    object-position: top;
 }
 
 .skills-and-edu {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 3rem;
+    column-gap: 1.5rem;
     row-gap: 1rem;
 
     margin-top: 1rem;
@@ -112,15 +124,19 @@ main {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1.5rem;
-    column-gap: 2rem;
+    gap: 1.5rem;
 
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 
 
 /* MEDIA QUERIES */
+@media (min-width: 20rem) { 
+    
+}
+
+
 @media (min-width: 35rem) { 
     header {
         flex-direction: row;
@@ -144,10 +160,16 @@ main {
 
 
 @media (min-width: 48rem) { 
+    #introduction .content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #introduction .content img {
+        aspect-ratio: 3/4;
+    }
+
     .projects-container {
         grid-template-columns: 1fr 1fr;
     }   
 }
-
-
-@me
