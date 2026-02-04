@@ -132,6 +132,11 @@ main {
 }
 
 
+svg {
+    border: 0.05rem solid dimgray;
+}
+
+
 /* MEDIA QUERIES */
 @media (min-width: 35rem) { 
     header {
