@@ -93,6 +93,11 @@ main {
 }
 
 
+/* INTRODUCTION */
+#introduction p {
+    max-width: 27.5rem;
+}
+
 .skills-and-edu {
     display: flex;
     flex-wrap: wrap;
