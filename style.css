@@ -35,7 +35,7 @@ p, li {
     font-size: 1rem;
     font-weight: 350;
     line-height: 150%;
-    text-wrap: balance;
+    text-wrap: pretty;
     color: black;
 }
 
@@ -104,3 +104,17 @@ main {
     margin-top: 0.5rem;
 }
 
+
+
+/* MEDIA QUERIES */
+@media (min-width: 30rem) { 
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav {
+        margin-top: 0;
+    }
+}
