@@ -31,7 +31,7 @@ h3 {
 }
 
 p, li {
-    font-family:Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 350;
     line-height: 150%;
@@ -72,6 +72,7 @@ header {
     border-bottom: 0.05rem solid dimgray;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-color: white;
 }
 
 header nav {
@@ -128,7 +129,6 @@ main {
 
     margin-top: 1.5rem;
 }
-
 
 
 /* MEDIA QUERIES */
