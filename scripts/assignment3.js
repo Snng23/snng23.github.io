@@ -35,7 +35,7 @@ vegaEmbed("#t1q2", {
     title: "Global Sales by Platform",
     description: "Global sales by platform.",
     width: "container",
-    height: 360,
+    height: 600,
     data: { url: dataWide },
     mark: "bar",
     encoding: {
