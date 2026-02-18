@@ -4,11 +4,11 @@ const dataLong = "data/assignment3/videogames_long.csv";
 
 
 //
-vegaEmbed("t1q1", {
+vegaEmbed("#t1q1", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     description: "Global sales by genre.",
     data: { url: dataWide },
-    mark: bar,
+    mark: "bar",
     encoding: {
         x: {
             field: "Genre", 
