@@ -87,7 +87,7 @@ vegaEmbed("#t2q1", {
             }],
 
             window: [{ 
-                op: "rank", 
+                op: "dense_rank", 
                 as: "Genre_Rank" 
             }]
         },
@@ -106,9 +106,8 @@ vegaEmbed("#t2q1", {
         },
 
         y: {
-            field: "Global_Sales",
+            field: "Sum_Global_Sales",
             type: "quantitative",
-            aggregate: "sum",
             title: "Total Global Sales"
         },
 
