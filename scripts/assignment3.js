@@ -67,6 +67,37 @@ vegaEmbed("#t2q1", {
     height: 600,
     data: { url: dataWide },
     mark: "line",
+
+    transform: [
+        //Calculate global sales by genre:
+        {
+            joinaggregate: [{
+                op: "sum", 
+                field: "Global_Sales", 
+                as: "Sum_Global_Sales" 
+            }],
+            groupby: ["Genre"]
+        },
+
+        //Sort and rank the genre in descending order based on sum global sales:
+        {
+            sort: [{ 
+                field: "Sum_Global_Sales", 
+                order: "descending" 
+            }],
+
+            window: [{ 
+                op: "rank", 
+                as: "Genre_Rank" 
+            }]
+        },
+
+        //Only include the top 5:
+        {
+            filter: "datum.Genre_Rank <= 5"
+        }
+    ],
+
     encoding: {
         x: {
             field: "Year", 
