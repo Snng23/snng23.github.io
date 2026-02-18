@@ -113,7 +113,11 @@ vegaEmbed("#t2q1", {
         },
 
         color: {
-            field: "Genre"
+            field: "Genre",
+            sort: {
+                field: "Sum_Global_Sales", 
+                order: "descending" 
+            }
         }
     }
 }, { actions: false });
