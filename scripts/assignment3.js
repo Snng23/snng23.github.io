@@ -66,7 +66,7 @@ vegaEmbed("#t2q1", {
     width: "container",
     height: 600,
     data: { url: dataWide },
-    mark: "line",
+    mark: "area",
 
     transform: [
         //Calculate global sales by genre:
