@@ -11,15 +11,15 @@ vegaEmbed("#t1q1", {
     mark: "bar",
     encoding: {
         x: {
-            field: "Genre", 
-            type: "nominal", 
-            title: "Genre",
-        },
-
-        y: {
             field: "Global_Sales",
             type: "quantitative",
             title: "Total Global Sales"
+        },
+        
+        y: {
+            field: "Genre", 
+            type: "nominal", 
+            title: "Genre",
         },
     }
 }, { actions: false });
