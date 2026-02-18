@@ -8,7 +8,7 @@ vegaEmbed("#t1q1", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     description: "Global sales by genre.",
     width: 1200,
-    height: 300,
+    height: 360,
     data: { url: dataWide },
     mark: "bar",
     encoding: {
