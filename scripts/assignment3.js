@@ -6,6 +6,7 @@ const dataLong = "data/assignment3/videogames_long.csv";
 //
 vegaEmbed("#t1q1", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+    title: "Global Sales by Genre",
     description: "Global sales by genre.",
     width: "container",
     height: 360,
