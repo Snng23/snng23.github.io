@@ -16,7 +16,7 @@ vegaEmbed("#t1q1", {
         x: {
             field: "Global_Sales",
             type: "quantitative",
-            sort: "descending",
+            sort: "ascending",
             title: "Total Global Sales"
         },
 
