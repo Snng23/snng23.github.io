@@ -106,8 +106,9 @@ vegaEmbed("#t2q1", {
         },
 
         y: {
-            field: "Sum_Global_Sales",
+            field: "Global_Sales",
             type: "quantitative",
+            aggregate: "sum",
             title: "Total Global Sales"
         },
 
