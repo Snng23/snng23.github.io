@@ -100,10 +100,6 @@ vegaEmbed("#t2q1", {
 
     encoding: {
         x: {
-            timeUnit: {
-                unit: "year",
-                step: 10
-            },
             field: "Year", 
             type: "temporal", 
             title: "Year",
