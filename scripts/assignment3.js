@@ -7,6 +7,7 @@ const dataLong = "data/assignment3/videogames_long.csv";
 vegaEmbed("#t1q1", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     description: "Global sales by genre.",
+    width: "container",
     data: { url: dataWide },
     mark: "bar",
     encoding: {
@@ -15,7 +16,7 @@ vegaEmbed("#t1q1", {
             type: "quantitative",
             title: "Total Global Sales"
         },
-        
+
         y: {
             field: "Genre", 
             type: "nominal", 
