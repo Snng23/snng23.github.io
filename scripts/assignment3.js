@@ -11,7 +11,7 @@ vegaEmbed("#t1q1", {
     description: "Global sales by genre.",
     width: "container",
     height: 360,
-    data: { url: dataLong },
+    data: { url: dataWide },
     mark: "bar",
     encoding: {
         x: {
@@ -37,7 +37,7 @@ vegaEmbed("#t1q2", {
     description: "Global sales by platform.",
     width: "container",
     height: 600,
-    data: { url: dataLong },
+    data: { url: dataWide },
     mark: "bar",
     encoding: {
         x: {
@@ -65,7 +65,7 @@ vegaEmbed("#t2q1", {
     description: "Global sales every 5 years for top 5 global best-selling genres.",
     width: "container",
     height: 600,
-    data: { url: dataLong },
+    data: { url: dataWide },
     mark: "line",
 
     transform: [
@@ -133,7 +133,7 @@ vegaEmbed("#t2q2", {
     description: "Global sales every 5 years for top 5 global best-selling platforms.",
     width: "container",
     height: 600,
-    data: { url: dataLong },
+    data: { url: dataWide },
     mark: "line",
 
     transform: [
