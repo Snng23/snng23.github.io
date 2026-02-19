@@ -102,6 +102,10 @@ vegaEmbed("#t2q1", {
         x: {
             field: "Year", 
             type: "temporal", 
+            timeUnit: {
+                unit: "year",
+                step: 5,
+            },
             title: "Year",
         },
 
