@@ -231,3 +231,41 @@ vegaEmbed("#t3q1", {
         }
     }
 }, { actions: false });
+
+
+
+//VISUALIZATION 3 GRAPHS:
+vegaEmbed("#t4q1", {
+    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+    title: "Regional Sales for each Platform",
+    description: "Regional sales for each platform.",
+    width: "container",
+    height: 600,
+    data: { url: dataLong },
+    mark: "bar",
+    
+    encoding: {
+        x: {
+            field: "genre",
+            type: "nominal",
+            sort: "-y",
+            title: "Genre"
+        },
+
+        y: {
+            field: "sales_amount",
+            type: "quantitative",
+            aggregate: "sum",
+            title: "Regional Sales"
+        },
+
+        xOffset: {
+            field: "sales_region"
+        },
+
+        color: {
+            title: "Regions",
+            field: "sales_region"
+        }
+    }
+}, { actions: false });
