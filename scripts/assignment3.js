@@ -205,16 +205,12 @@ vegaEmbed("#t3q1", {
     height: 600,
     data: { url: dataLong },
     mark: "bar",
-
-    //Filter out platforms with 0 sales:
-    transform: [{ 
-        filter: "datum.global_sales > 0" 
-    }],
     
     encoding: {
         x: {
             field: "platform",
             type: "nominal",
+            sort: "-y",
             title: "Platform"
         },
 
@@ -222,7 +218,7 @@ vegaEmbed("#t3q1", {
             field: "sales_amount",
             type: "quantitative",
             aggregate: "sum",
-            title: "Sales (millions)"
+            title: "Regional Sales"
         },
 
         xOffset: {
@@ -230,6 +226,7 @@ vegaEmbed("#t3q1", {
         },
 
         color: {
+            title: "Regional Sales",
             field: "sales_region"
         }
     }
