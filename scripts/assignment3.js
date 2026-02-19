@@ -125,3 +125,71 @@ vegaEmbed("#t2q1", {
         }
     }
 }, { actions: false });
+
+
+vegaEmbed("#t2q2", {
+    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+    title: "Global Sales Every 5 Years for Top 5 Global Best-Selling Platforms",
+    description: "Global sales every 5 years for top 5 global best-selling platforms.",
+    width: "container",
+    height: 600,
+    data: { url: dataWide },
+    mark: "line",
+
+    transform: [
+        //Calculate global sales by platform:
+        {
+            joinaggregate: [{
+                op: "sum", 
+                field: "Global_Sales", 
+                as: "Sum_Global_Sales" 
+            }],
+            groupby: ["Platform"]
+        },
+
+        //Sort and rank the platform in descending order based on sum global sales:
+        {
+            sort: [{ 
+                field: "Sum_Global_Sales", 
+                order: "descending" 
+            }],
+
+            window: [{ 
+                op: "dense_rank", 
+                as: "Platform_Rank" 
+            }]
+        },
+
+        //Only include the top 5:
+        {
+            filter: "datum.Platform_Rank <= 5"
+        }
+    ],
+
+    encoding: {
+        x: {
+            field: "Year", 
+            type: "temporal", 
+            timeUnit: {
+                unit: "year",
+                step: 5,
+            },
+            title: "Year",
+        },
+
+        y: {
+            field: "Global_Sales",
+            type: "quantitative",
+            aggregate: "sum",
+            title: "Total Global Sales"
+        },
+
+        color: {
+            field: "Platform",
+            sort: {
+                field: "Sum_Global_Sales", 
+                order: "descending" 
+            }
+        }
+    }
+}, { actions: false });
