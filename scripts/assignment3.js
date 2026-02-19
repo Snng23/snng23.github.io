@@ -205,6 +205,12 @@ vegaEmbed("#t3q1", {
     height: 600,
     data: { url: dataLong },
     mark: "bar",
+
+    //Filter out platforms with 0 sales:
+    transform: [{ 
+        filter: "datum.global_sales > 0" 
+    }],
+    
     encoding: {
         x: {
             field: "platform",
