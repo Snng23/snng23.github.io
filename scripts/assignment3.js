@@ -226,7 +226,7 @@ vegaEmbed("#t3q1", {
         },
 
         color: {
-            title: "Regional Sales",
+            title: "Regions",
             field: "sales_region"
         }
     }
