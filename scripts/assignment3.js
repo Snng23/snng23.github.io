@@ -197,7 +197,7 @@ vegaEmbed("#t2q2", {
 
 
 //VISUALIZATION 3 GRAPHS:
-vegaEmbed("#t3q1", {
+vegaEmbed("#t3", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     title: "Regional Sales for each Platform",
     description: "Regional sales for each platform.",
@@ -235,7 +235,7 @@ vegaEmbed("#t3q1", {
 
 
 //VISUALIZATION 3 GRAPHS:
-vegaEmbed("#t4q1", {
+vegaEmbed("#t4", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     title: "Regional Sales for each Platform",
     description: "Regional sales for each platform.",
