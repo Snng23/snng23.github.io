@@ -204,7 +204,7 @@ vegaEmbed("#t3q1", {
     width: "container",
     height: 600,
     data: { url: dataLong },
-    mark: bar,
+    mark: "bar",
     encoding: {
         x: {
             field: "platform",
