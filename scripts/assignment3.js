@@ -61,8 +61,8 @@ vegaEmbed("#t1q2", {
 //VISUALIZATION 2 GRAPHS:
 vegaEmbed("#t2q1", {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-    title: "Global Sales Over Time by Genre",
-    description: "Global sales over time by genre.",
+    title: "Global Sales Over Time for Top 5 Global Best-Selling Genre",
+    description: "Global sales over time for top 5 global best-selling genre.",
     width: "container",
     height: 600,
     data: { url: dataWide },
