@@ -11,10 +11,25 @@ let svg;
 
 
 async function prepareVis() {
-  svg = d3.select("#d3")
-  .append("svg")
-  .attr("width", width)
-  .attr("height", height)
+  svg = d3
+    .select("#d3")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .on("click", onCanvasClick);
+}
+
+
+//Add circle at mouse coordinate to list of circles:
+async function onCanvasClick(event) {
+  // Get mouse coordinate:
+  const [x, y] = d3.pointer(event, svg.node());
+
+  // Add a new circle to list.
+  // If list exceeds 10 circles, delete the oldest one
+  circles = [...circles, { id: nextId++, x, y }].slice(-maxCircles);
+
+  await drawVis();
 }
 
 
