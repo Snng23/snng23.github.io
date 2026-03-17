@@ -1,15 +1,13 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 let svg;
-let circle;
 
 const width = 800;
 const height = 600;
-const duration = 800;
-const clickFrameCount = 5;
 
 async function prepareVis() {
   svg = d3.select("#d3")
+  .append("svg")
   .attr("width", width)
   .attr("height", height)
 }
